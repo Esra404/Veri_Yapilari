@@ -7,16 +7,22 @@ public class BagliListeimlp {
         Node n2=new Node(15);
         Node n3=new Node(35);
         Node n4=new Node(25);
+        Node n5=new Node(2);
 
 
         b1.print();
-        b1.add(n1);
+        b1.addInOrder(n1);
         b1.print();
-        b1.add(n2);
+        b1.addInOrder(n2);
         b1.print();
-        b1.add(n3);
+        b1.addInOrder(n3);
         b1.print();
-        b1.add(n4);
+        b1.addInOrder(n4);
+        b1.print();
+        b1.addInOrder(n5);
+        b1.print();
+        b1.delete(25);
+        b1.print();
 
 
     }
