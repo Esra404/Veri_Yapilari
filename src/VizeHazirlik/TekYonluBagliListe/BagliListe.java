@@ -48,11 +48,16 @@ public class BagliListe {
         if(bas==null){
             bas =yeni;
 
-        }else{
+        }
+        else{
             Eleman yedek=bas;
+
             while(yedek.ileri !=null){
                 if(yedek.icerik==sayi){
-                    break;}
+
+                    break;
+                }
+
                     yedek=yedek.ileri;
                 }
                 yeni.ileri=yedek.ileri;
@@ -67,16 +72,23 @@ public class BagliListe {
             }
             yedek =yedek.ileri;
         }
+
         return null;
         }
+
         public void bastanSil(){
-        bas=bas.ileri;
+           // bas=bas.ileri;
         if(bas==null){
+            System.out.println("if ");
             son=null;
-        }else{
+        }
+
+        else{
+            System.out.println("else ");
             Eleman temp=bas;
             bas=bas.ileri;
             temp.ileri=null;
+
             if(bas==null){
                 son=null;
             }
@@ -84,22 +96,34 @@ public class BagliListe {
         }
         public void sondanSil(){
         Eleman yedek,once;
-        yedek=bas;
-        once=null;
+         yedek=bas;
+         once=null;
         while ( yedek != son){
             once=yedek;
             yedek=yedek.ileri;
+        }
+
             if(once == null){
                 bas=null;
                 son=null;
-            }else{
+            }
+            else{
                 once.ileri=null;
                 son=once;
             }
         }
 
-        }
 
+        public  void  print(){
+            Eleman yedek = bas;
+            System.out.print(yedek.icerik +"->" );
+            while (yedek.ileri != null) {
+
+                yedek = yedek.ileri;
+                System.out.print(yedek.icerik +"->" );
+            }
+            System.out.println();
+        }
 
     }
 

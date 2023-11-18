@@ -16,20 +16,36 @@ public class Sinav {
 
 
         liste.basaEkle(eleman2);
+//        liste.print();
         liste.basaEkle(eleman1);
+//        liste.print();
         liste.sonaEkle(eleman3);
+//        liste.print();
+        liste.arayaEkleme(eleman5, 1);
+//        liste.print();
         liste.sonaEkleme(eleman4);
-        liste.arayaEkleme(eleman5, 5);
-        Eleman bulunan = liste.aranan(110);
-        liste.bastanSil();
-        liste.sondanSil();
-        if (bulunan != null) {
-            System.out.println("Aranan eleman bulundu: " + bulunan.icerik);
-        } else {
-            System.out.println("Aranan eleman bulunamadı.");
-        }
+      //  liste.print();
+//        liste.bastanSil();
+      //  liste.print();
+        liste.print();
+      liste.sondanSil();
+      liste.print();
 
-        System.out.println(eleman3.icerik + "-->" + eleman4.icerik+"-->"+ eleman2.icerik+"-->"+eleman1.icerik+"-->"+eleman5.icerik);
+//        liste.print();
+//
+//        liste.arayaEkleme(eleman5, 2);
+//        liste.print();
+//        Eleman bulunan = liste.aranan(1200);
+//        System.out.println(bulunan.icerik);
+//        liste.bastanSil();
+//        liste.sondanSil();
+//        if (bulunan != null) {
+//            System.out.println("Aranan eleman bulundu: " + bulunan.icerik);
+//        } else {
+//            System.out.println("Aranan eleman bulunamadı.");
+//        }
+//
+//        System.out.println(eleman3.icerik + "-->" + eleman4.icerik+"-->"+ eleman2.icerik+"-->"+eleman1.icerik+"-->"+eleman5.icerik);
 
     }
 
