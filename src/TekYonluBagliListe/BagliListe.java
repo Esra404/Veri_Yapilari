@@ -17,4 +17,17 @@ public class BagliListe {
             bas=yeni;
         }
     }
+    void sonaEkle(Eleman yeni){
+        if(bas==null){
+            bas=yeni;
+            son=yeni;
+        }
+        else{
+            son.ileri=yeni;
+            son=yeni;
+        }
+    }
+
+
+
 }
