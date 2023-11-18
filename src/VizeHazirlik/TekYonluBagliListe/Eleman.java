@@ -1,4 +1,4 @@
-package TekYonluBagliListe;
+package VizeHazirlik.TekYonluBagliListe;
 
 public class Eleman {
 
