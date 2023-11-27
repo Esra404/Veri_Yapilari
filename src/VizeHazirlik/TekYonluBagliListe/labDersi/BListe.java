@@ -1,5 +1,5 @@
 package VizeHazirlik.TekYonluBagliListe.labDersi;
-
+/*
 public class BListe {
     Eleman bas, son;
 
@@ -53,14 +53,14 @@ public class BListe {
             son = null;
         }
         return null;
-         else{
-          once.ileri=null;
-          son=once;
-          return silinen;
-        }
+        //else{
+          //once.ileri=null;
+          ///son=once;
+          //return silinen;
+        //}
     }
  public Eleman listedenAl(int aranan){
         Eleman tmp=bas;
-        while ()
+     // while ()
  }
-}
+}*/

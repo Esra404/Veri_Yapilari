@@ -21,9 +21,9 @@ public class BagliListe {
     public void listeyazdir(){
         Dugum gecerli=bas;
         while (gecerli !=null){
-            System.out.println(gecerli.icerik+" ");
+            System.out.print(gecerli.icerik+"-->");
             gecerli=gecerli.ileri;
-            System.out.println();
+            System.out.print( " ");
         }
     }
 }
